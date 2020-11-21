@@ -15,11 +15,14 @@ class ImageProxy(APIView):
         link = kwargs.get('link')
         key = str(new_width) + link
 
-        value = redis_instance.get(key)
-        if value is not None:
+        timeout = 3600 * 2
 
-            return HttpResponse(value, content_type='image/png')
+        value = redis_instance.get(key)
+        if value is None:
+            response_content = compose_imageproxy_response(new_width, link)
+            redis_instance.set(key, response_content, ex=timeout)
         else:
-            resized_image_bytes = compose_imageproxy_response(new_width, link)
-            redis_instance.set(key, resized_image_bytes, ex=3600 * 2)
-            return HttpResponse(resized_image_bytes, content_type='image/png')
+            redis_instance.expire(key, time=timeout)
+            response_content = value
+
+        return HttpResponse(response_content, content_type='image/png')
