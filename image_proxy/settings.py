@@ -116,3 +116,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images/')
+
+# Redis
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
