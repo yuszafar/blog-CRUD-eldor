@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b651d5b-b7b6-4350-b71e-00e4daa05e8e" name="Default Changelist" comment="" />
+    <list default="true" id="9b651d5b-b7b6-4350-b71e-00e4daa05e8e" name="Default Changelist" comment="Dockerfile and Dockercompose added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,8 +79,18 @@
       <option name="presentableId" value="Default" />
       <updated>1605951818539</updated>
       <workItem from="1605951820311" duration="63000" />
-      <workItem from="1605951923849" duration="605000" />
+      <workItem from="1605951923849" duration="1179000" />
+      <workItem from="1605953726102" duration="992000" />
+      <workItem from="1606108491548" duration="966000" />
     </task>
+    <task id="LOCAL-00001" summary="Dockerfile and Dockercompose added">
+      <created>1605952777831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605952777831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +107,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dockerfile and Dockercompose added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile and Dockercompose added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605952782843">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="556" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1605952782843" />
+    <state x="800" y="312" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605952752617">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="800" y="312" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1605952752617" />
   </component>
 </project>
