@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'chat',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -122,3 +123,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images/')
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
+
+# Channels
+ASGI_APPLICATION = 'image_proxy.asgi.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
